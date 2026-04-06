@@ -17,10 +17,10 @@ int main(void) {
     int  edad; 
 
     printf("Ingresa tu nombre: "); 
-    scanf("%", nombre); 
+    scanf("%s", nombre); 
 
     printf("Ingresa tu edad: "); 
-    scanf("%", &edad); 
+    scanf("%d", &edad); 
 
     printf("\nHola, %s!\n", nombre); 
     printf("Naciste aproximadamente en: %d\n",    

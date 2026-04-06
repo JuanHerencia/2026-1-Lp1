@@ -28,7 +28,7 @@ git push -u origin main
 /*
    Obtener el repositorio de la nube en el local
 */
-// En el terminal, ubicarse en el folder que será el repo loca
+// En el terminal, ubicarse en el folder que será el repo local
 git clone https://github.com/JuanHerencia/2026-1-Lp1.git
 
 
