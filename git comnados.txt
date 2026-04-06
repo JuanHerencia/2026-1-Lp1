@@ -1,0 +1,35 @@
+/*
+    Llevar un repositorio local a un nuevo repositorio de
+   GitHub
+*/
+
+git init    // Inicializar el repo local
+git config --local user.name "..."
+git config --local user.email "email"
+git add .
+git commit -m "programas en C"
+
+// Esto será el "main" remoto
+remote add origin https://github.com/JuanHerencia/2026-1-Lp1.git
+
+// Iniciar desde la rama
+git branch -M main
+
+// Mezclar el 'main' con el repo local
+git pull origin main --allow-unrelated-histories
+
+// PEDIRA EL TOKEN 
+// Usar el token clásico (full repo
+// permisos para repo)
+
+// Llevar el local (origin) al main (remoto)
+git push -u origin main
+
+/*
+   Obtener el repositorio de la nube en el local
+*/
+// En el terminal, ubicarse en el folder que será el repo loca
+git clone https://github.com/JuanHerencia/2026-1-Lp1.git
+
+
+
