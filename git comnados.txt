@@ -10,7 +10,7 @@ git add .
 git commit -m "programas en C"
 
 // Esto será el "main" remoto
-remote add origin https://github.com/JuanHerencia/2026-1-Lp1.git
+git remote add origin https://github.com/JuanHerencia/2026-1-Lp1.git
 
 // Iniciar desde la rama
 git branch -M main
