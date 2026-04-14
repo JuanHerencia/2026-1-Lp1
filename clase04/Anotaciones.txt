@@ -1,0 +1,11 @@
+https://meet.google.com/bww-csar-gya
+
+75 decimal  <----------> 01001011   binario
+
+                    0 1 0 0 1 0 1 1
+orden de bit  --->  7 6 5 4 3 2 1 0
+Bits altos          -------
+Bits bajos                  -------
+
+                    1 1 0 1 1 0 1 0
+orden de bit  --->  7 6 5 4 3 2 1 0
