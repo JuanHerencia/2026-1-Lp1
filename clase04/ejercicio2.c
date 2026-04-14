@@ -1,5 +1,9 @@
 // Ejercicio 2
 // Conversiones
+/*
+    La muestra de long double con printf dependerá del compilador y
+    la arquitectura de la PC asociada
+*/
 
 #include <stdio.h>
 
@@ -13,7 +17,7 @@ int main() {
 
     long double ld = 1.234567890123456789L;
     double d = ld;   // Pérdida de precisión implícita
-    printf("long double: %0.15Lf\n", ld);
-    printf("double: %0.15f\n", d);
+    printf("long double: %0.20Lf y su tamaño es %d bytes\n", ld, sizeof(ld));
+    printf("double: %0.20f y su tamaño es %d bytes\n", d, sizeof(d));
     return 0;
 }
