@@ -14,6 +14,6 @@ void incrementar() {
     // Para uso solo dentro de la función
     static int veces = 0;   // Persiste entre llamadas
     veces++;
-    contador_local++;
+    contador_local++; // esta función manipula a la var global
     printf("veces (estática local): %d, contador_local (estática global): %d\n", veces, contador_local);
 }
