@@ -1,0 +1,40 @@
+Instalación de GCC (compilador de C/C++)
+----------------------------------------
+
+** Descargar desde https://msys2.org el archivo msys2-x86_64-20260322.exe
+   y proceder a instalar siguiendo las instrucciones
+
+** Finalizar la instalación con el check en "Run MSYS2 now"
+
+** Se cargará un terminal:
+NOMBRE_USUARIO@WIN11_2024 UCRT64 ~
+$
+
+** En dicho terminal, instalar las herramientas de compilación
+
+$ pacman -S mingw-w64-ucrt-x86_64-gcc
+Poner Y para aceptar la instalación
+
+** Probar la instalación en el terminal
+$ gcc --versión
+gcc.exe (Rev13, Built by MSYS2 project) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+** Hacerlo disponible desde el terminal de Windows desde cualquier folder
+
+Presiona la tecla Windows y escribe "Variables de entorno".
+Buscar el botón "Variables de entorno ..."
+Selecciona "Editar las variables de entorno del sistema" o "Editar variables de entorno para tu cuenta".
+Buscar Path y seleccionar el botón editar
+Poner Nuevo y buscar el folder de binarios de C/C++ "C:\msys64\ucrt64\bin" y pegarlo.
+Poner Aceptar y nuevamente Aceptar
+
+** Probar en Power Shell y debe salir:
+> gcc --version
+gcc.exe (Rev13, Built by MSYS2 project) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
