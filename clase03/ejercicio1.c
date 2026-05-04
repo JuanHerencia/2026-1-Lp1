@@ -1,32 +1,18 @@
-/* ejercicio1.c 
- * Estructura básica de un programa en C. 
- * Lee nombre y edad, calcula el año de nacimiento aproximado. 
- */ 
-
 #include <stdio.h> 
-#include <stdlib.h> 
-
-#define ANIO_ACTUAL 2025 
-
-
-/* Prototipo */ 
-int calcular_nacimiento(int edad); 
- 
+#include <iostream>
+using namespace std;
 int main(void) { 
     char nombre[50]; 
-    int  edad; 
+    int  n,i = 0; 
+cout<<"Ingrese el numero: ";
+	cin>>n;
+	while (i<n){
+		cout<<i<<endl;
+		i++;
+	}
 
-    printf("Ingresa tu nombre: "); 
-    scanf("%s", nombre); 
 
-    printf("Ingresa tu edad: "); 
-    scanf("%d", &edad); 
-
-    printf("\nHola, %s!\n", nombre); 
-    printf("Naciste aproximadamente en: %d\n",    
-    calcular_nacimiento(edad)); 
-
-     return EXIT_SUCCESS; 
+     return 0; 
 } 
 
 int calcular_nacimiento(int edad) { 

@@ -1,0 +1,20 @@
+!Configuración de acceso básica
+!
+!Colocar un nombre al dispositivo
+!
+hostname R-Lima
+!
+enable secret class
+!
+line console 0
+ login
+ password cisco
+!
+service password-encryption
+!
+banner motd #Acceso Restringido - Solo personal autorizado#
+!
+line vty 0 4
+ login
+ password cisco
+!

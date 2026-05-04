@@ -1,0 +1,63 @@
+total_comision  // estilo gusano
+
+
+totalComision  // estilo camello
+
+if (a = b) {
+
+}
+
+a++;
+++a;
+-a
+a / b
+
+a = 17;
+b = 7;
+r = a  % b; // se obtiene el resto de dividir a entre b
+                   // r es 3
+>,<,>=,<=
+!=    diferente
+==   igual a
+Todos devuelven 0 ó 1
+
+scanf("%d %d", &var1, &var2)
+
+> 10 15[ENTER]
+
+for(i = 1, k = 10; k > 100; k += 2.5)
+
+for(i = 1, k = 10; k > 100 || i < 20 && k*i  < 120; k += 2.5)
+
+x = 0
+y = x^2 + 5*x - 7
+
+(),*,/+-
+100 * 5 / 2
+
+int get_b()
+{
+   return b;
+}
+
+n = 5
+float S = 0;
+float i = 1.0;
+while (i <= n) 
+{
+  s += (1/i)*(1/i);
+  i += 1.0;
+}
+
+n = 10 // 00000110
+      // 76543210   // posicion
+p = 4 // posición 4
+b = 1
+x = b << (p + 1) // 00010000
+nuevo_n = n | x
+
+00000110 or |
+00010000
+--------
+00010110
+

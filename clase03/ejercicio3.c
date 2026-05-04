@@ -2,19 +2,21 @@
 #include <stdlib.h> 
 
 int main(void) { 
-    double celsius; 
+    int celsius; 
     double fahrenheit; 
     double kelvin; 
 
     /* Paso 1: leer entrada */ 
     printf("Ingresa temperatura en Celsius: "); 
-    if (scanf("%lf", &celsius) != 1) { 
+    int x = scanf("%lf", &celsius);
+    printf("x es %d\n", x);
+    if ( x != 1) { 
         fprintf(stderr, "Error: entrada no valida.\n"); 
         return EXIT_FAILURE; 
     } 
 
     /* Paso 2: convertir a Fahrenheit (depende de celsius) */ 
-    fahrenheit = celsius * 9.0 / 5.0 + 32.0; 
+    fahrenheit = celsius * 9 / 5 + 32.0; 
 
     /* Paso 3: convertir a Kelvin (depende de celsius) */ 
     kelvin = celsius + 273.15; 
