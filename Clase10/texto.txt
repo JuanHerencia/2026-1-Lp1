@@ -1,0 +1,6 @@
+La inteligencia artificial ya no solo calcula: algunos modelos de lenguaje ya 
+aportan razonamientos que especialistas describen como conexiones inesperadas 
+entre subáreas de las matemáticas, informó la revista científica Nature. 
+Thang Luong, responsable del equipo de Razonamiento Sobrehumano de Google DeepMind, 
+señaló que “quizás para 2030” la inteligencia artificial y los matemáticos pudieran 
+ganar juntos una Medalla Fields, el mayor reconocimiento en matemáticas.
