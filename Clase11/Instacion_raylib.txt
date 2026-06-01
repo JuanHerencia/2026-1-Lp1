@@ -1,0 +1,27 @@
+Instalación de la librería para gráficos RayLib
+-----------------------------------------------
+
+Después de instalar GCC mediante MINGW64.
+Cargar MINGW64 (bash) en Windows y ejecutar la instrucción en el terminal
+
+$ pacman -S mingw-w64-x86_64-raylib
+
+Esto instalará automáticamente:
+  /mingw64/include/raylib.h (headers)
+  /mingw64/lib/libraylib.a (librería estática)
+  /mingw64/bin/libraylib.dll
+
+Intentar ejecutar la compilación, considerando que los fólderes include y lib se encuentren en C:\msys64\mingw64\include y C:\msys64\mingw64\lib
+$ gcc test_raylib.c -o test_raylib.exe -IC:\msys64\mingw64\include -LC:\msys64\mingw64\lib -lraylib -lopengl32 -lgdi32 -lwinmm
+$ gcc graf_funciones.c -o graf_funciones.exe -IC:\msys64\mingw64\include -LC:\msys64\mingw64\lib -lraylib -lopengl32 -lgdi32 -lwinmm
+
+Si no funciona copiar del folder C:\msys64\mingw64\bin los archivos libraylib.dll y glfw3.dll al folder local
+Con esto debe funcionar correctamente.
+
+Ojo este ejecutable (test_raylib.exe) puede ser no portable en un ambiente que no tiene MINGW64, para ello copiar al folder local los archivos:
+libgcc_s_seh-1.dll
+libstdc++-6.dll
+libwinpthread-1.dll
+
+
+
